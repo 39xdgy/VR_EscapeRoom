@@ -26,7 +26,7 @@ public class ControllerButtonPusher : MonoBehaviour {
 
 	void Start ()
 	{
-        rightCode = "1111";
+        rightCode = "9876";
         code = "";
         CodeNum.text = "Code: ";
     }
