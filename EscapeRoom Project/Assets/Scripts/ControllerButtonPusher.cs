@@ -15,8 +15,12 @@ public class ControllerButtonPusher : MonoBehaviour {
 
 	void Start ()
 	{
-		rightCode = [1, 2, 3, 4];
-		code = new ArrayList();
+        rightCode = new ArrayList();
+        rightCode.add(1);
+        rightCode.add(2);
+        rightCode.add(3);
+        rightCode.add(4);
+        code = new ArrayList();
     }
 
 	void FixedUpdate ()
@@ -76,23 +80,36 @@ public class ControllerButtonPusher : MonoBehaviour {
             code.Add(9);
             hit.Play();
         }
-		else if (other.gameObject.CompareTag("Green")
+		else if (other.gameObject.CompareTag("Green"))
 		{
-			if ( code.Equals(rightCode) )
-			{
-				right.Play();
-				// update door boolean
-			}
+            if(code.Count == rightCode.Count)
+            {
+                for(int i = 0; i < rightCode.Count; i++)
+                {
+                    if(code[i] != rightCode[i])
+                    {
+                        wrong.play();
+                        code = new ArrayList();
+                        break;
+                    }
+                    if (i == rightCode.Count - 1)
+                    {
+                        right.play();
+                        open = true;
+                    }
+                }
+            }
 			else
 			{
 				wrong.Play();
 				code = new ArrayList();
 			}
 		}
-		else if (other.gameObject.CompareTag("Red")
+		else if (other.gameObject.CompareTag("Red"))
 		{
 			wrong.Play();
 			code = new ArrayList();
 		}
+        //System.Threading.Thread.Sleep(2000);
     }
 }

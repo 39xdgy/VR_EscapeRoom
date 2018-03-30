@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FxTemporaire
+  - projectile
+  - One
+  - Two
+  - Three
+  - Four
+  - Five
+  - Six
+  - Seven
+  - Eight
+  - Nine
+  - Zero
+  - Red
+  - Green
   layers:
   - Default
   - TransparentFX
