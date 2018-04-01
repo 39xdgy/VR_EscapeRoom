@@ -116,7 +116,7 @@ public class ControllerButtonPusher : MonoBehaviour {
 		}
 		else if (other.gameObject.CompareTag("Red"))
 		{
-			wrong.Play();
+			hit.Play();
 			code = "";
             CodeNum.text = "Code: ";
 		}
