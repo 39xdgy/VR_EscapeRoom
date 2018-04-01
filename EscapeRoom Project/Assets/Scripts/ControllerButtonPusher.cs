@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
+
+
 
 public class ControllerButtonPusher : MonoBehaviour {
 
-    private String code;
-	private String rightCode;
+    private string code;
+	private string rightCode;
 	public AudioSource hit;
 	public AudioSource wrong;
 	public AudioSource right;
@@ -26,7 +27,7 @@ public class ControllerButtonPusher : MonoBehaviour {
 
 	void Start ()
 	{
-        rightCode = "9876";
+        rightCode = "2607";
         code = "";
         CodeNum.text = "Code: ";
     }

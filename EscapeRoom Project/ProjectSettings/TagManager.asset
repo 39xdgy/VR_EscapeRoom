@@ -18,6 +18,7 @@ TagManager:
   - Zero
   - Red
   - Green
+  - Key
   layers:
   - Default
   - TransparentFX
@@ -32,7 +33,7 @@ TagManager:
   - Door
   - Hand
   - Player
-  - 
+  - Key
   - 
   - 
   - 

@@ -21,10 +21,22 @@ public class Animation_Chest : MonoBehaviour {
         //playsound.clip = Sound;
     }
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Key"))
+        {
+            anim.SetBool("Open_chest", true);
+        }
+    }
+
+
+
+
     private void FixedUpdate()
     {
-        if (player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Grip))
-            anim.SetBool("Open_chest", true);
+        //if (player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Grip))
+          //  anim.SetBool("Open_chest", true);
     }
 
     // Update is called once per frame
