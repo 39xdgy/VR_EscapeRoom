@@ -1,0 +1,3 @@
+-move teleport point slightly further away from keypad
+-keypad usable with both hands at once
+-eliminate delay on cabinet doors
