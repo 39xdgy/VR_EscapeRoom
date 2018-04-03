@@ -10,4 +10,4 @@ Keypad:   https://www.turbosquid.com/3d-models/free-max-mode-keypad/786122
 Paper:    https://www.turbosquid.com/3d-models/note-a4-3d-model-1245425  
 Wall:     https://www.turbosquid.com/FullPreview/Index.cfm/ID/243350  
 ### Code
-https://answers.unity.com/questions/381183/two-textures-on-one-surface.html  
+https://forum.unity.com/threads/reveal-texture-only-when-light-falls-on-it.26639/  
