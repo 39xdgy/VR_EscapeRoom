@@ -19,6 +19,7 @@ TagManager:
   - Red
   - Green
   - Key
+  - Hand
   layers:
   - Default
   - TransparentFX

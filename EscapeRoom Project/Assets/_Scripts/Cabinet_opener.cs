@@ -14,16 +14,19 @@ public class Cabinet_opener : MonoBehaviour {
         anim = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.CompareTag("Hand") && (player.leftController.GetPressDown(SteamVR_Controller.ButtonMask.Trigger) || player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))){
+        if(other.gameObject.CompareTag("Hand") && (player.leftController.GetPressDown(SteamVR_Controller.ButtonMask.Trigger) || player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Trigger)))
+        {
             if (!isOpen)
             {
                 anim.SetBool("Open", true);
+                anim.SetBool("Close", false);
             }
             else
             {
                 anim.SetBool("Close",true);
+                anim.SetBool("Open", false);
             }
             isOpen = !isOpen;
         }

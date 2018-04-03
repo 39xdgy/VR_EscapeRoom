@@ -8,7 +8,10 @@ public class Tutoral_animation : MonoBehaviour
     //public BoxCollider keypad;
         Player player;
         Animator anim;
-    ControllerButtonPusher script;
+    ControllerButtonPusher script2;
+    ControllerButtonPusher script1;
+    public string code;
+    public string rightcode;
     //public GameObject hand;
 
     private void Start()
@@ -21,7 +24,9 @@ public class Tutoral_animation : MonoBehaviour
             player = GameObject.Find("Player").GetComponent<Player>();
             anim = GetComponent<Animator>();
         GameObject Hand2 = GameObject.Find("Hand2");
-        script = Hand2.GetComponent<ControllerButtonPusher>();
+        GameObject Hand1 = GameObject.Find("Hand1");
+        script2 = Hand2.GetComponent<ControllerButtonPusher>();
+        script1 = Hand1.GetComponent<ControllerButtonPusher>();
         //playsound.clip = Sound;
     }
 
@@ -29,7 +34,7 @@ public class Tutoral_animation : MonoBehaviour
     private void FixedUpdate()
         {
            // bool test = player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Grip);
-        bool test = script.open;
+        bool test = script2.open || script1.open;
         
        // bool fin = test && hand.
             anim.SetBool("Open", test);
