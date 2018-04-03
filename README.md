@@ -1,4 +1,4 @@
-# Escape Room VR Project
+## Escape Room VR Project
 By Dorothy Carmichael, Ben Gurka, Mark VanderNaald, and Jiashu Jason Wang
 
 # Resources
