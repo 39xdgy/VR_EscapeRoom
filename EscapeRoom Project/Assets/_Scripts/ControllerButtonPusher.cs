@@ -107,7 +107,7 @@ public class ControllerButtonPusher : MonoBehaviour {
             if(code == rightCode)
              {
                     right.Play();
-                    CodeNum.text += "right";
+                    CodeNum.text += "correct";
                     open = true;
              }
 			else
