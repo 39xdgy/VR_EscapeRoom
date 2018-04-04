@@ -20,6 +20,7 @@ TagManager:
   - Green
   - Key
   - Hand
+  - UV_light
   layers:
   - Default
   - TransparentFX
