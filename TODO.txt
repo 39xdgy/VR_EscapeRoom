@@ -8,3 +8,4 @@
 -remove phantom floor texture
 -create hidden UV message
 -make win area pretty
+-make flashlight easier to point
