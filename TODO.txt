@@ -1,4 +1,10 @@
 -move teleport point slightly further away from keypad
+-box behind keypad for realism
 -keypad usable with both hands at once
+-move exit door frame into wall
 -eliminate delay on cabinet doors
 -make keypad "current code" text bigger
+-create "you win" message outside room
+-remove phantom floor texture
+-create hidden UV message
+-make win area pretty
