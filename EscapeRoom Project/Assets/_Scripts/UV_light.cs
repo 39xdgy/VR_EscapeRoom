@@ -70,6 +70,15 @@ public class UV_light : MonoBehaviour {
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("UV_light"))
+        {
+            Anim.SetBool("Turn_On", true);
+            Anim.SetBool("Turn_Off", false);
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("UV_light"))
