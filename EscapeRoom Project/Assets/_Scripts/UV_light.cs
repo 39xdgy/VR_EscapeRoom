@@ -25,7 +25,7 @@ public class UV_light : MonoBehaviour {
         Anim = GameObject.Find("fonarik_low_fbx").GetComponent<Animator>();
         player = GameObject.Find("Player").GetComponent<Player>();
     }
-
+/**
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("UV_light"))
@@ -66,9 +66,10 @@ public class UV_light : MonoBehaviour {
                 }
             }
             isOn = !isOn;
-    **/
+			//
         }
     }
+**/
 
     private void OnTriggerStay(Collider other)
     {
