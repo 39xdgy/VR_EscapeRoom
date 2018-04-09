@@ -12,6 +12,8 @@ Wall:     https://www.turbosquid.com/FullPreview/Index.cfm/ID/243350
 Frame:    https://assetstore.unity.com/packages/3d/props/furniture/classic-picture-frame-59038  
 Books:    https://assetstore.unity.com/packages/3d/props/elemental-tomes-112086  
 Flash Light: https://www.turbosquid.com/3d-models/3d-flashlight-topex-1165829  
+Key:      https://assetstore.unity.com/packages/3d/handpainted-keys-42044  
+Bookshelf:  https://assetstore.unity.com/packages/3d/props/interior/worn-bookshelf-8458
 ### Code
 https://forum.unity.com/threads/reveal-texture-only-when-light-falls-on-it.26639/  
 http://forum.unity3d.com/threads/3d-text-that-takes-the-depth-buffer-into-account.9931/  
