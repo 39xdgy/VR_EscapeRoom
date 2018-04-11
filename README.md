@@ -2,7 +2,7 @@
 By Dorothy Carmichael, Ben Gurka, Mark VanderNaald, and Jiashu Jason Wang
 
 ## Overview
-An escape room game, originally popularized by online Flash games but recently recreated in real life, is an experience where a player is locked in a room and must use clues found within to unlock the door and escape. For our project, made for Ross Sowell's CSC 357 Virtual Reality class at Cornell College, we created a realistic escape room in virtual reality that could theoretically be reproduced in real life. The items and textures within the room are all free assets downloaded from the Unity Asset Store and TurboSquid, which our team augmented and added to with both the SteamVR package and scripts we wrote ourselves. To see a demonstration of the room, played by one of the developers, view the DEMO.flv file.
+An escape room game, originally popularized by online Flash games but recently recreated in real life, is an experience where a player is locked in a room and must use clues found within to unlock the door and escape. For our project, made for Ross Sowell's CSC 356 Virtual Reality class at Cornell College, we created a realistic escape room in virtual reality using Unity that could theoretically be reproduced in real life. The items and textures within the room are all free assets downloaded from the Unity Asset Store and TurboSquid, which our team augmented with both the SteamVR package and scripts we wrote ourselves. The project was presented to the Cornell College community with a printed poster, which can be seen as the Escape_Room_Poster.jpg file. To see a demonstration of the room, played by one of the developers, view the video at https://youtu.be/nlDAVU01G-k. (No people were harmed in the making of this demo: the tester made contact with an unfortunately placed jacket.
 
 ## How to Play
 REQUIRED: SteamVR, HTC Vive  
@@ -13,7 +13,7 @@ Only one action can be done at a time with each controller.
 #### Teleport
 Press and hold the trackpad on either controller, and a green circle should appear on the floor where that controller is pointing. If the player points to a non-viable position, such as a wall or under a solid object, the circle will turn red. Release the trackpad when the circle is green to teleport to that location.
 #### Interact
-If the controller glows yellow, the object underneath it can be picked up. Pull and hold the trigger on that controller to pick up the object. Release the trigger to let go of the object. If the trigger is released while the controller is moving, the object will be thrown.
+If the controller glows yellow, the object underneath it can be picked up. Pull and hold the trigger on that controller to pick up the object. Release the trigger to let go of the object. If the trigger is released while the controller is moving, the object will be thrown. (Note: unfortunately, due to limitations of the assets used, none of the books in the room open.)
 #### Open
 The cabinet asset in the room is fully interactable. All doors and drawers can be opened by placing either controller on the handle of that door or drawer and pressing the trigger.
 #### Press
