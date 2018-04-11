@@ -4,73 +4,17 @@ using UnityEngine;
 using Valve.VR.InteractionSystem;
 
 public class UV_light : MonoBehaviour {
-
+	//create the value of player for controller, the animation and the boolean of the flashlight
     Player player;
     Animator Anim;
     private bool isOn = false;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
+	//setup the animation and player object
     private void Awake()
     {
         Anim = GameObject.Find("fonarik_low_fbx").GetComponent<Animator>();
         player = GameObject.Find("Player").GetComponent<Player>();
     }
-/**
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("UV_light"))
-        {
-                Anim.SetBool("Turn_On", true);
-                Anim.SetBool("Turn_Off", false);
-            
-
-            
-
-
-
-            /**
-            if(this.name == "Hand1")
-            {
-                if (player.rightController.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && !isOn)
-                {
-                    Anim.SetBool("Turn_On", true);
-                    Anim.SetBool("Turn_Off", false);
-                }
-                else
-                {
-                    Anim.SetBool("Turn_On", false);
-                    Anim.SetBool("Turn_Off", true);
-                }
-            }
-            else
-            {
-                if(player.leftController.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && !isOn)
-                {
-                    Anim.SetBool("Turn_On", true);
-                    Anim.SetBool("Turn_Off", false);
-                }
-                else
-                {
-                    Anim.SetBool("Turn_On", false);
-                    Anim.SetBool("Turn_Off", true);
-                }
-            }
-            isOn = !isOn;
-			//
-        }
-    }
-**/
-
+	// when it enter the trigger, turn on the flashlight
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("UV_light"))
@@ -79,7 +23,7 @@ public class UV_light : MonoBehaviour {
             Anim.SetBool("Turn_Off", false);
         }
     }
-
+	//when it exit the trigger, turn off the flashlight
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("UV_light"))
