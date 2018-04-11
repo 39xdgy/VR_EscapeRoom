@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ControllerGrabObject : MonoBehaviour {
-
+    //SteamVR buildin script, do not have any commit below
     private SteamVR_TrackedObject trackedObj;
     // 1
     private GameObject collidingObject;
